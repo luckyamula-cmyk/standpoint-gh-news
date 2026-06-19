@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ghana-red: #CE1126;
+  --color-ghana-gold: #FCD116;
+  --color-ghana-green: #006B3F;
+  --color-navy: #0F172A;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-scroll {
+  animation: ticker-scroll 40s linear infinite;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.ticker-scroll:hover {
+  animation-play-state: paused;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
